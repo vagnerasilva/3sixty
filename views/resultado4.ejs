@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html >
+<head>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>3Sixty</title>
+	<script type='text/javascript' src='js/mobile.js'></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"> -->
+
+
+   <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+
+
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">3Sixty</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#about">Saiba Mais</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#services">Como Funciona</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#performance">Alta Performance</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#portfolio">Entre pro Time</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+        <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+
+    <video autoplay loop poster="performance.jpg" style="position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%); 
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover; ">
+    <source src="/performance.jpg" width="100%">
+    </video>
+
+    <div class="header-content-inner">
+                 
+<br><br><br><br><br>
+                <h1 id="homeHeading">3Sixty</h1>
+                <hr>
+                <p>O caminho para a alta-performance!</p>
+                <a href="#atleta" class="btn btn-primary btn-xl page-scroll">RESULTADO</a>
+            </div>
+        </div>
+    </header>
+
+
+<body>
+
+	<!-- GRAFICO LINHA -->
+	
+<br><br><br><br><br>
+    <section id="atleta">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Gráficos de Performance</h2>
+                    <hr class="primary">
+                    <p></p>
+                </div>
+<br><br><br><br><br>
+<div class="container">
+
+
+            <div class="row">
+
+                <div class="col-lg-8 col-lg-offset-2">
+
+    <center><h3> Resultado da semana</h3><br>
+      <li> Dia 1 :<%= carga[0] %> km</li>
+      <li> Dia 2 :<%= carga[1] %> km</li>
+      <li> Dia 3 :<%= carga[2] %> km</li>
+      <li> Dia 4 :<%= carga[3] %> km</li>
+      <li> Dia 5 :<%= carga[4] %> km</li>
+      <li> Dia 6 :<%= carga[5] %> km</li></center>
+      
+
+  </ul>
+</div></div>
+<br><br><br><br><br>
+            <div class="row">
+
+                <div class="col-lg-8 col-lg-offset-2">
+
+	<script src="d3.min.js" charset="utf-8"></script>
+	<script src="c3.min.js"></script>
+	
+  
+
+<center><h3> Realizado vs Esperado<br>(para esta semana)</h3></center>
+<div id= "chart0"></div> <!-- Grafico um -->
+                <script>
+
+                var chart = c3.generate({
+                bindto: '#chart0',
+                 data: {
+                      columns: [
+                       ['Realizado', <%=carga[0]%>, <%=carga[1]%>, <%=carga[2]%>, <%=carga[3]%>, <%=carga[4]%>, <%=carga[5]%>],
+                       ['Meta', <%=carga[0]%>*1.10, <%=carga[0]%>*1.30, <%=carga[0]%>*1.40, <%=carga[0]%>*1.50, <%=carga[0]%>*1.60, <%=carga[0]%>*2]
+                       ],
+                   labels: true,
+                   types: {
+                       Realizado: 'bar',
+                       Meta: 'bar' // ADD
+                         },
+                },
+
+                axis: {
+                   x: {type:'category',
+                       categories: ['dia1', 'dia2','dia3','dia4','dia5','dia6'],
+                       label:{
+                           text:'Dias Semana',
+                           position: 'outer-middle'
+                           },
+                       },
+                   y: {
+                       label:{
+                           text: 'Tempo Corrida',
+                           position: 'outer-middle'
+                       }
+                   }
+                   }    
+                });
+                
+
+             </script>
+</div></div>
+
+<br><br><br><br><br>
+
+<center><h3> Programa para a próxima semana<br>(esperado e desafio)</h3></center>
+            <div class="row">
+
+                <div class="col-lg-8 col-lg-offset-2">
+
+<div id= "chart1"> </div> <!-- Grafico dois -->
+
+
+                <script>
+
+                var chart = c3.generate({
+                bindto: '#chart1',
+                 data: {
+                      columns: [
+                       ['Esperado', <%=carga[5]%>*1.10, <%=carga[5]%>*1.30, <%=carga[5]%>*1.40, <%=carga[5]%>*1.50, <%=carga[5]%>*1.60, <%=carga[5]%>*2],
+                       ['Desafio', <%=carga[5]%>*1.20, <%=carga[5]%>*1.40, <%=carga[5]%>*1.50, <%=carga[5]%>*1.60, <%=carga[5]%>*1.70, <%=carga[5]%>*2.3]
+                       ],
+                   labels: true,
+                   types: {
+                       Esperado: 'bar',
+                       Desafio: 'bar' // ADD
+                         },
+                },
+
+                axis: {
+                   x: {type:'category',
+                       categories: ['dia1', 'dia2','dia3','dia4','dia5','dia6'],
+                       label:{
+                           text:'Dias Semana',
+                           position: 'outer-middle'
+                           },
+                       },
+                   y: {
+                       label:{
+                           text: 'Tempo Corrida',
+                           position: 'outer-middle'
+                       }
+                   }
+                   }    
+                });
+                
+
+                </script>
+</div></div>
+
+<br><br><br><br><br>
+<center><h3> Análise de Performance<br>(realizado vs desafio)</h3></center>
+            <div class="row">
+
+                <div class="col-lg-8 col-lg-offset-2">
+
+<div id= "chart2"> </div> <!-- Grafico tres -->
+  <script>
+  var chart2 = c3.generate({ 
+    bindto: '#chart2',
+    data: {
+        columns: [
+            ['Realizado', <%=carga[0]%>-<%=carga[0]%>*1.10, <%=carga[1]%>-<%=carga[0]%>*1.30, <%=carga[2]%>-<%=carga[0]%>*1.40,<%=carga[3]%>-<%=carga[0]%>*1.50,<%=carga[4]%>-<%=carga[0]%>*1.60,<%=carga[5]%>-<%=carga[0]%>*2], /* pra somar os valor ao grafico vc precisa transformar em numero*/
+            ['Desafio', <%=carga[5]%>*1.10-<%=carga[0]%>*1.10, <%=carga[5]%>*1.30-<%=carga[0]%>*1.30, <%=carga[5]%>*1.40-<%=carga[0]%>*1.40, <%=carga[5]%>*1.50-<%=carga[0]%>*1.50, <%=carga[5]%>*1.60-<%=carga[0]%>*1.60, <%=carga[5]%>*2-<%=carga[0]%>*2]
+        ],
+        types: {
+            Realizado: 'area',
+            Desafio: 'area-spline'
+        }
+    }
+});
+  </script>	
+
+<a href="DANCA.MP4" class="btn btn-primary btn-xl page-scroll">VLW! FLWS! OBRIGADO! É NÓIS!</a>
+</body>
+</html>
